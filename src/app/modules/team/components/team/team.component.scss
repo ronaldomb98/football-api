@@ -1,0 +1,13 @@
+
+.team-content {
+  &__picture {
+    max-height: 200px;
+  }
+  h2 {
+    margin-top: 0;
+  }
+
+  &__item:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+}

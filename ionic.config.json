@@ -1,0 +1,7 @@
+{
+  "name": "api-football",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

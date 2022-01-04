@@ -1,0 +1,12 @@
+<ion-item *ngIf="competition" [routerLink]="'/competition-teams/' + competition.id" [detail]="false">
+  <ion-avatar slot="start">
+    <img [src]="competition.area.ensignUrl" alt="Not found">
+  </ion-avatar>
+  <ion-label class="ion-text-wrap">
+    <h2>
+      {{ competition.name }}
+      <ion-note>{{ competition.plan }}</ion-note>
+    </h2>
+  </ion-label>
+  <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+</ion-item>

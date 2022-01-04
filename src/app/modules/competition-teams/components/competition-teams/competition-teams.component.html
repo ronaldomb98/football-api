@@ -1,0 +1,28 @@
+<ng-container *ngIf="competition$ | async as competition">
+  <ion-header [translucent]="true">
+    <ion-toolbar >
+      <ion-buttons slot="start">
+        <app-back-to-home></app-back-to-home>
+      </ion-buttons>
+      <ion-title>
+        {{ competition.name }}
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">
+          {{ competition.name }}
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-list>
+      <app-competition-team-item
+        *ngFor="let team of teams$ | async"
+        [team]="team"></app-competition-team-item>
+    </ion-list>
+  </ion-content>
+</ng-container>

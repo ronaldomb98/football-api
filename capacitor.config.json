@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "api-football",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
